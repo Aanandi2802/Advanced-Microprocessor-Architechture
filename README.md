@@ -2,14 +2,15 @@
 
 Languages:
 
-  -Assembly, C++
-  
+    -Assembly
+    -C++
+
 Softwares:
 
-  -DOSBox0.74-3
-  -Turbo C++
+    -DOSBox0.74-3
+    -Turbo C++
   
 Contains:
 
-  -1_Journal Index
-  -Each file in Experiments: Problem Statatement, Code, and Output Screenshots
+    -1_Journal Index
+    -Each file in Experiments: Problem Statatement, Code, and Output Screenshots
