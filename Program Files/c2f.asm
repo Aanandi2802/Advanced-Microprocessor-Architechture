@@ -1,0 +1,38 @@
+_TEXT SEGMENT BYTE PUBLIC 'CODE'
+DGROUP group _DATA
+	ASSUME CS:_TEXT,DS:DGROUP,SS:DGROUP
+_TEXT ends
+
+
+_TEXT SEGMENT BYTE PUBLIC 'CODE'
+
+PUBLIC _c2f
+
+_c2f PROC NEAR
+	PUSH BP
+	MOV BP,SP
+	PUSH SI
+	MOV AX,WORD PTR[BP+4]
+	MOV DX,9
+	MUL DX
+	MOV BX,5
+	CWD
+	IDIV BX
+	MOV SI,AX
+	ADD SI,32
+	MOV AX,SI
+	POP SI
+	POP BP
+	RET
+_c2f ENDP
+
+_TEXT ENDS
+
+_BSS segment word public 'BSS'
+	extrn _tempf:word
+_BSS ends
+_DATA segment word public 'DATA'
+	extrn _tempc:word
+_DATA ends
+
+END
