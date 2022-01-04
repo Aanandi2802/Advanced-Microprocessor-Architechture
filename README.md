@@ -3,7 +3,7 @@
 Languages:
 
     -Assembly
-    -C++
+    -C
 
 Softwares:
 
